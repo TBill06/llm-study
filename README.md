@@ -41,11 +41,11 @@ Create a `.env` file in the root directory with the following variables:
 ### Installation
 
 1. Clone the repository:
-   ```bash
+  ```bash
    git clone https://github.com/yourusername/llm-study.git
    cd llm-study
-   ```
-3. Install dependencies:
+  ```
+2. Install dependencies:
   ```bash
   npm install
   ```
@@ -104,4 +104,6 @@ llm-study/
 └── public/                  # Static assets
 ```
 
+## License
 
+This project is licensed under the MIT License - see the LICENSE file for details.

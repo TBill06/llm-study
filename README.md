@@ -22,6 +22,7 @@ This platform provides a comprehensive environment for conducting human-computer
 - **AWS**:
     - IAM user with AmazonS3FullAccess, AmazonDynamoDBFullAccess, IAMReadOnlyAccess (optional)
     - S3 bucket settings - Uncheck "Block public and cross-account access to buckets and objects through any public bucket or access point policies"
+    - DynamoDB - Check the database schema below. Also add a OrderCount with orderval set to 0 for init.
 
 ### Environment Setup
 
@@ -44,7 +45,7 @@ Create a `.env` file in the root directory with the following variables:
    git clone https://github.com/yourusername/llm-study.git
    cd llm-study
    ```
-2. Install dependencies:
+3. Install dependencies:
   ```bash
   npm install
   ```
@@ -58,6 +59,15 @@ Create a `.env` file in the root directory with the following variables:
   npm install
   npm start
   ```
+
+### Database Schema for DynamoDB
+- Primary Key: userID (S)
+- Sort Key: questionID (S)
+- Attributes:
+    - prompt: User's input prompt
+    - response: AI-generated response
+    - surveyAnswers: Object containing Likert scale, NASA TLX, and text responses
+    - createdAt: Date.Now()
 
 ## Project Structure
 ``` 

@@ -12,7 +12,8 @@ This platform provides a comprehensive environment for conducting human-computer
 - **Backend**: Node.js, Express
 - **Database**: AWS DynamoDB, AWS S3
 - **API Integrations**: OpenAI (for text generation), DALL-E (for image generation)
-
+- **Hosting**: Render (backend), Vercel (frontend)
+  
 ## Getting Started
 
 ### Prerequisites

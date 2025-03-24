@@ -13,6 +13,52 @@ This platform provides a comprehensive environment for conducting human-computer
 - **Database**: AWS DynamoDB, AWS S3
 - **API Integrations**: OpenAI (for text generation), DALL-E (for image generation)
 
+## Getting Started
+
+### Prerequisites
+
+- Node.js
+- npm or yarn
+- **AWS**:
+    - IAM user with AmazonS3FullAccess, AmazonDynamoDBFullAccess, IAMReadOnlyAccess (optional)
+    - S3 bucket settings - Uncheck "Block public and cross-account access to buckets and objects through any public bucket or access point policies"
+
+### Environment Setup
+
+Create a `.env` file in the root directory with the following variables:
+- PORT
+- OPENAI_API_KEY
+- JWT_SECRET
+- AWS_ACCESS_KEY_ID
+- AWS_SECRET_ACCESS_KEY
+- AWS_REGION
+- S3_BUCKET_NAME
+- DDB_TABLE_NAME
+- REACT_APP_BACKEND_HOST_URL (this is for frontend)
+
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/llm-study.git
+   cd llm-study
+   ```
+2. Install dependencies:
+  ```bash
+  npm install
+  ```
+3. Start the development server:
+  ```bash
+  npm start
+  ```
+4. Start the backend server:
+  ```bash
+  cd server
+  npm install
+  npm start
+  ```
+
 ## Project Structure
 ``` 
 llm-study/
